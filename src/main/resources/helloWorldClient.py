@@ -6,8 +6,8 @@ import hello_pb2_grpc as hello_pb2_grpc
 
 
 def main():
-    firstname = sys.argv[1] if len(sys.argv) > 1 else "Max"
-    lastname = sys.argv[2] if len(sys.argv) > 2 else "Mustermann"
+    firstname = sys.argv[1] if len(sys.argv) > 1 else "Nico"
+    lastname = sys.argv[2] if len(sys.argv) > 2 else "Gal"
 
     # Connect to server
     with grpc.insecure_channel("localhost:50051") as channel:
