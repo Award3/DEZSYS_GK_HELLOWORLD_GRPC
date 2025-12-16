@@ -55,7 +55,6 @@ The `.proto` file defines the `GreetingService` with a `sayHello` RPC method, an
 
 ```protobuf
 syntax = "proto3";
-// ... options ...
 
 service GreetingService {
   rpc sayHello (HelloRequest) returns (HelloResponse) {}
@@ -75,7 +74,6 @@ message HelloResponse {
 The server implements `GreetingServiceImpl` by extending the generated base class. It extracts the name, builds the greeting string, and sends the `HelloResponse`.
 
 ```java
-// Simplified Server Snippet
 public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImplBase {
     @Override
     public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
@@ -92,7 +90,6 @@ public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImpl
 The client creates an insecure `ManagedChannel` to connect to `localhost:9090`. It then uses a `BlockingStub` to make a synchronous `sayHello` RPC call, printing the resulting message.
 
 ```java
-// Simplified Client Snippet
 ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();
 GreetingServiceGrpc.GreetingServiceBlockingStub stub = GreetingServiceGrpc.newBlockingStub(channel);
 HelloResponse response = stub.sayHello(HelloRequest.newBuilder().setName("Thomas").build());
