@@ -7,5 +7,5 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (DEZSYS_GK_HELLOWORLD_GRPC)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="ms-21" project-jdk-type="JavaSDK" />
 </project>

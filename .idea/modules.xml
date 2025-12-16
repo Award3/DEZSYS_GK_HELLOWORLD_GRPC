@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DEZSYS_GK_HELLOWORLD_GRPC.iml" filepath="$PROJECT_DIR$/.idea/DEZSYS_GK_HELLOWORLD_GRPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hellogrpc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hellogrpc.main.iml" />
     </modules>
   </component>
 </project>
